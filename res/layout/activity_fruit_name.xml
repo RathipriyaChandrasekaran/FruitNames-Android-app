@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rathipriya.fruitnames.FruitNameActivity" >
+
+     <GridView 
+        android:id="@+id/gridview"
+        android:background="#1F1F00"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:scrollbars="horizontal" >
+    </GridView>
+    
+     
+     <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+     <TextView 
+         android:id="@id/title" 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:contentDescription="@string/app_name"
+         android:visibility="invisible"/>
+
+</FrameLayout>
